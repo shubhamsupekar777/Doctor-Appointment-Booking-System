@@ -56,9 +56,9 @@ const AddDoctor = () => {
            if (data.success) {
     toast.success(data.message);
 
-    await getAllDoctors(); // refresh doctor list
+    await getAllDoctors(); 
 
-    navigate("/doctor-list"); // your route
+    navigate("/doctor-list"); 
 
     // optional: reset form
     setDocImg(false);
@@ -194,7 +194,7 @@ const AddDoctor = () => {
                     <textarea onChange={e => setAbout(e.target.value)} value={about} className='w-full px-4 pt-2 rounded-lg shadow-sm' rows={5} placeholder='write about doctor'></textarea>
                 </div>
 
-                <button type='submit' className='bg-primary px-10 py-3 mt-4 text-white rounded-full'>Add doctor</button>
+                <button type='submit' className='bg-primary px-10 py-3 mt-4 cursor-pointer text-white rounded-full'>Add doctor</button>
 
             </div>
 
