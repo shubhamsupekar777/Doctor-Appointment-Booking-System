@@ -23,7 +23,7 @@ const Dashboard = () => {
         <div className='flex items-center gap-2 bg-white p-4 min-w-52 rounded-lg border border-gray-200 shadow-sm cursor-pointer hover:scale-105 transition-all duration-300'>
           <img className='w-14' src={assets.doctor_icon} alt="" />
           <div>
-            <p className='text-xl font-semibold text-gray-600'>{dashData.doctors}</p>
+            <p className='text-xl font-semibold text-gray-700'>{dashData.doctors}</p>
             <p className='text-gray-400'>Doctors</p>
           </div>
         </div>
@@ -31,7 +31,7 @@ const Dashboard = () => {
         <div className='flex items-center gap-2 bg-white p-4 min-w-52 rounded-lg border border-gray-200 shadow-sm cursor-pointer hover:scale-105 transition-all duration-300'>
           <img className='w-14' src={assets.appointments_icon} alt="" />
           <div>
-            <p className='text-xl font-semibold text-gray-600'>{dashData.appointments}</p>
+            <p className='text-xl font-semibold text-gray-700'>{dashData.appointments}</p>
             <p className='text-gray-400'>Appointments</p>
           </div>
         </div>
@@ -39,7 +39,7 @@ const Dashboard = () => {
         <div className='flex items-center gap-2 bg-white p-4 min-w-52 rounded-lg border border-gray-200 shadow-sm cursor-pointer hover:scale-105 transition-all duration-300'>
           <img className='w-14' src={assets.patients_icon} alt="" />
           <div>
-            <p className='text-xl font-semibold text-gray-600'>{dashData.patients}</p>
+            <p className='text-xl font-semibold text-gray-700'>{dashData.patients}</p>
             <p className='text-gray-400'>Patients</p>
           </div>
         </div>
