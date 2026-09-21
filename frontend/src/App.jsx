@@ -221,6 +221,7 @@ import PatientLayout from './layout/PatientLayout'
 
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import ReportAnalyzer from './pages/ReportAnalyzer'
 
 
 const App = () => {
@@ -353,6 +354,12 @@ const App = () => {
           />
 
         </Route>
+
+        {/* Report Analyser */}
+        <Route
+    path="/patient/report-analyzer"
+    element={<ReportAnalyzer />}
+/>
 
       </Routes>
     </>
