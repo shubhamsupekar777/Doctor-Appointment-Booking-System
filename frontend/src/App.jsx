@@ -352,15 +352,16 @@ const App = () => {
             path="/patient/appointment/:docId"
             element={<Appointment />}
           />
-
-        </Route>
-
-        {/* Report Analyser */}
+           {/* Report Analyser */}
         <Route
     path="/patient/report-analyzer"
     element={<ReportAnalyzer />}
 />
 
+
+        </Route>
+
+       
       </Routes>
     </>
   )
