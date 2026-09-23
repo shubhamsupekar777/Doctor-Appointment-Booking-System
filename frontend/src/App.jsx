@@ -222,6 +222,8 @@ import PatientLayout from './layout/PatientLayout'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import ReportAnalyzer from './pages/ReportAnalyzer'
+import HomeRedirect from './components/HomeRedirect'
+import MedicalVideos from './pages/MedicalVideos'
 
 
 const App = () => {
@@ -237,14 +239,23 @@ const App = () => {
         ===================================================== */}
 
         {/* Home */}
-        <Route
+        {/* <Route
           path="/"
           element={
             <PublicLayout>
               <Home />
             </PublicLayout>
           }
-        />
+        /> */}
+
+        <Route
+    path="/"
+    element={
+        <PublicLayout>
+            <HomeRedirect />
+        </PublicLayout>
+    }
+/>
 
         {/* All Doctors */}
         <Route
@@ -357,6 +368,8 @@ const App = () => {
     path="/patient/report-analyzer"
     element={<ReportAnalyzer />}
 />
+
+<Route path='/patient/medical-videos' element={<MedicalVideos/>}/>
 
 
         </Route>

@@ -7,6 +7,7 @@ import userRouter from "./routes/userRoute.js"
 import doctorRouter from "./routes/doctorRoute.js"
 import adminRouter from "./routes/adminRoute.js"
 import reportRouter from "./routes/reportRoute.js"
+import videoRouter from "./routes/videoRoute.js"
 
 // app config
 const app = express()
@@ -27,6 +28,7 @@ app.use("/api/user", userRouter)
 app.use("/api/admin", adminRouter)
 app.use("/api/doctor", doctorRouter)
 app.use("/api/report", reportRouter)
+app.use("/api/video",videoRouter);
 
 app.get("/", (req, res) => {
     res.send("API Working")

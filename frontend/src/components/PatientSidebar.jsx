@@ -49,7 +49,7 @@ const PatientSidebar = () => {
                         className={linkClass}
                     >
                         <span className="flex items-center gap-3">
-                            <span>📅</span>
+                            <span></span>
                             <span className="text-[15px]">Book Appointment</span>
                         </span>
                         <span>›</span>
@@ -60,7 +60,7 @@ const PatientSidebar = () => {
                         className={linkClass}
                     >
                         <span className="flex items-center gap-3">
-                            <span>🗓</span>
+                            <span></span>
                             <span className="text-[15px]">Appointment History</span>
                         </span>
                         <span>›</span>
@@ -76,12 +76,26 @@ const PatientSidebar = () => {
                         className={linkClass}
                     >
                         <span className="flex items-center gap-3">
-                            <span>📄</span>
+                            <span></span>
                             <span className="text-[15px]">Report Analyzer</span>
                         </span>
                         <span>›</span>
                     </NavLink>
                 </nav>
+
+                <p className="px-4 mb-4 mt-9 text-xs font-semibold tracking-wider text-gray-400">
+                    DISCOVER
+                </p>
+                <nav className="space-y-2">
+                    <NavLink to="/patient/medical-videos" className={linkClass}>
+                        <span className="flex items-center gap-3">
+                            <span></span>
+                            <span className="text-[15px]">Medical Videos</span>
+                        </span>
+                        <span>›</span>
+                    </NavLink>
+                     </nav>
+
 
                 <p className="px-4 mb-4 mt-9 text-xs font-semibold tracking-wider text-gray-400">
                     ACCOUNT
